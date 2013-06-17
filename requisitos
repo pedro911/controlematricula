@@ -1,0 +1,18 @@
+
+Regras negocio controle matricula
+
+- nº matriculados no curso não pode exceder numero Maximo de alunos permitidos;
+- a matricula do aluno pode ser feita em até 1 dia antes do inicio do curso;
+CRUDS
+FILTROS:
+- alunos matriculados por curso;
+- alunos matriculados por concurso;
+Apresentar a quantidade e o valor total das matriculas filtradas em ambos.
+
+Passos:
+1.  Arrumar os campos int na modelagem do banco no dbdesigner;
+2.	Gerar o script SQL para criar o banco;
+3.	Criar o banco;
+4.	Usar o plugin MyEclipse ou outro plugin para gerar as classes (engenharia reversa) do banco.
+
+Jesse@seasites.com.br 
