@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<f:view>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Cadastro de Aluno</title>
+</head>
+<body>
+
+<h:form>
+
+<table>
+<tr>
+<td><h:outputText value="Nome" />:</td>
+<td><h:inputText value="#{MBCliente.cliente.nome}" label="nome" id="nome" ><!--<f:validateLength minimum="3" />--> </h:inputText></td>
+<TD><h:message for="nome" /></TD>
+</tr>
+<tr>
+<td><h:outputText value="E-mail" />:</td>
+<td><h:inputText value="#{MBCliente.cliente.email}" /></td>
+</tr>
+<tr>
+<td><h:commandButton value="limpa" action="#{MBCliente.limpaCampos}" /></td>
+<td><h:commandButton value="salvar" action="#{MBCliente.salvar}" /></td>
+</tr>
+</table>
+
+</h:form>
+</body>
+</f:view>
+</html>

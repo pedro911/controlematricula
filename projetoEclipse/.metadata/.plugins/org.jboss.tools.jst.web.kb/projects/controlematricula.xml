@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/libsjava/hibernate-4.1.7/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+  <path value="C:/libsjava/hibernate-4.1.7/jboss-logging-3.1.0.GA.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/jsf-api.jar"/>
+  <path value="C:/libsjava/hibernate-4.1.7/hibernate-entitymanager-4.1.7.Final.jar"/>
+  <path value="C:/libsjava/hibernate-4.1.7/javassist-3.15.0-GA.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/standard-1.1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/c-1_0-rt.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/c-1_0.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/c.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/fmt-1_0-rt.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/fmt-1_0.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/fmt.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/fn.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/permittedtaglibs.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/scriptfree.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/sql-1_0-rt.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/sql-1_0.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/sql.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/x-1_0-rt.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/x-1_0.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar/meta-inf/x.tld" project="controlematricula"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/libsjava/hibernate-4.1.7/antlr-2.7.7.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/javax.faces-2.0.9.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar/meta-inf/html_basic.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar/meta-inf/jsf_core.tld" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar/meta-inf/mojarra_ext.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar/meta-inf/mojarra_ext.tld" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar/com/sun/faces/metadata/taglib/composite.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar/com/sun/faces/metadata/taglib/ui.taglib.xml" project="controlematricula"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/dom4j-1.6.1.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/mysql-connector-java-3.0.11-stable-bin.jar"/>
+  <path value="C:/libsjava/hibernate-4.1.7/hibernate-core-4.1.7.Final.jar"/>
+  <path value="C:/libsjava/jsf/javax.faces-2.0.9.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar-1/meta-inf/html_basic.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar-1/meta-inf/jsf_core.tld" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar-1/meta-inf/mojarra_ext.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar-1/meta-inf/mojarra_ext.tld" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar-1/com/sun/faces/metadata/taglib/composite.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar-1/com/sun/faces/metadata/taglib/facelets_jsf_core.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar-1/com/sun/faces/metadata/taglib/html_basic.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar-1/com/sun/faces/metadata/taglib/jstl-core.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar-1/com/sun/faces/metadata/taglib/jstl-fn.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar-1/com/sun/faces/metadata/taglib/mojarra_ext.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.0.9.jar-1/com/sun/faces/metadata/taglib/ui.taglib.xml" project="controlematricula"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/hibernate-entitymanager-4.1.7.Final.jar"/>
+  <path value="C:/libsjava/hibernate-4.1.7/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+  <path value="C:/libsjava/jsf/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/hibernate-core-4.1.7.Final.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/jsf-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/html_basic.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/jsf_core.tld" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar/meta-inf/mojarra_ext.tld" project="controlematricula"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/javassist-3.15.0-GA.jar"/>
+  <path value="/controlematricula/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="controlematricula"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/libsjava/hibernate-4.1.7/dom4j-1.6.1.jar"/>
+  <path value="C:/libsjava/jsf/jsf-api.jar"/>
+  <path value="C:/libsjava/jsf/standard-1.1.2.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/c-1_0-rt.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/c-1_0.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/c.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/fmt-1_0-rt.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/fmt-1_0.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/fmt.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/fn.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/permittedtaglibs.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/scriptfree.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/sql-1_0-rt.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/sql-1_0.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/sql.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/x-1_0-rt.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/x-1_0.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-standard-1.1.2.jar-1/meta-inf/x.tld" project="controlematricula"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/libsjava/mysql/mysql-connector-java-3.0.11-stable-bin.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/hibernate-commons-annotations-4.0.1.Final.jar"/>
+  <path value="C:/libsjava/hibernate-4.1.7/hibernate-commons-annotations-4.0.1.Final.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/antlr-2.7.7.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/jboss-logging-3.1.0.GA.jar"/>
+  <path value="C:/Users/Pedro/Documents/GitHub/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
+  <path value="C:/libsjava/jsf/jsf-impl.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar-1/meta-inf/html_basic.tld" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar-1/meta-inf/jsf_core.tld" project="controlematricula"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar-1/meta-inf/mojarra_ext.taglib.xml" project="controlematricula"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jsf-impl.jar-1/meta-inf/mojarra_ext.tld" project="controlematricula"/>
+    </library>
+   </libraries>
+  </path>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="25" name="%0" offset="763" path="%1"/>
+   <linked-el length="25" name="%0" offset="1566" path="%2"/>
+   <linked-el length="12" name="%3" offset="903" path="%4"/>
+   <linked-el length="30" name="%3" offset="415" path="%4"/>
+   <linked-el length="25" name="%3" offset="763" path="%1"/>
+   <linked-el length="10" name="%3" offset="625" path="%4"/>
+   <linked-el length="10" name="%3" offset="1105" path="%4"/>
+   <linked-el length="10" name="%3" offset="775" path="%4"/>
+   <linked-el length="19" name="%3" offset="578" path="%4"/>
+   <linked-el length="24" name="%3" offset="451" path="%1"/>
+   <linked-el length="20" name="%3" offset="378" path="%4"/>
+   <linked-el length="18" name="%3" offset="337" path="%4"/>
+   <linked-el length="24" name="%3" offset="704" path="%2"/>
+   <linked-el length="25" name="%3" offset="1064" path="%2"/>
+   <linked-el length="25" name="%3" offset="1566" path="%2"/>
+   <linked-el length="12" name="%3" offset="559" path="%4"/>
+   <linked-el length="25" name="%3" offset="674" path="%1"/>
+   <linked-el length="19" name="%3" offset="1436" path="%2"/>
+   <linked-el length="20" name="%3" offset="840" path="%1"/>
+   <linked-el length="24" name="%3" offset="1053" path="%4"/>
+   <linked-el length="10" name="%5" offset="625" path="%4"/>
+   <linked-el length="10" name="%5" offset="1105" path="%4"/>
+   <linked-el length="10" name="%5" offset="775" path="%4"/>
+   <linked-el length="24" name="%6" offset="451" path="%1"/>
+   <linked-el length="25" name="%6" offset="674" path="%1"/>
+   <linked-el length="25" name="%7" offset="674" path="%1"/>
+   <linked-el length="24" name="%8" offset="451" path="%1"/>
+   <linked-el length="20" name="%9" offset="840" path="%1"/>
+   <linked-el length="10" name="%10" offset="625" path="%4"/>
+   <linked-el length="10" name="%10" offset="1105" path="%4"/>
+   <linked-el length="10" name="%10" offset="775" path="%4"/>
+   <linked-el length="24" name="%11" offset="704" path="%2"/>
+   <linked-el length="12" name="%11" offset="903" path="%4"/>
+   <linked-el length="25" name="%11" offset="1064" path="%2"/>
+   <linked-el length="10" name="%11" offset="625" path="%4"/>
+   <linked-el length="10" name="%11" offset="1105" path="%4"/>
+   <linked-el length="10" name="%11" offset="775" path="%4"/>
+   <linked-el length="12" name="%11" offset="559" path="%4"/>
+   <linked-el length="24" name="%12" offset="704" path="%2"/>
+   <linked-el length="25" name="%12" offset="1064" path="%2"/>
+   <linked-el length="30" name="%12" offset="415" path="%4"/>
+   <linked-el length="25" name="%12" offset="1566" path="%2"/>
+   <linked-el length="19" name="%12" offset="578" path="%4"/>
+   <linked-el length="20" name="%12" offset="378" path="%4"/>
+   <linked-el length="19" name="%12" offset="1436" path="%2"/>
+   <linked-el length="18" name="%12" offset="337" path="%4"/>
+   <linked-el length="24" name="%12" offset="1053" path="%4"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="MBAluno.limpaCampos" value="%0"/>
+  <alias path="MBAluno" value="%3"/>
+  <alias path="p.id" value="%5"/>
+  <alias path="/controlematricula/WebContent/inserirAluno.jsp" value="%1"/>
+  <alias path="MBAluno.aluno" value="%6"/>
+  <alias path="MBAluno.aluno.email" value="%7"/>
+  <alias path="MBAluno.aluno.nome" value="%8"/>
+  <alias path="MBAluno.salvar" value="%9"/>
+  <alias path="p" value="%10"/>
+  <alias path="/controlematricula/src/aluno/Aluno.java" value="%11"/>
+  <alias path="/controlematricula/src/aluno/MBAluno.java" value="%12"/>
+  <alias path="/controlematricula/WebContent/CadastroCliente.xhtml" value="%2"/>
+  <alias path="/controlematricula/WebContent/ListagemCliente.jsp" value="%4"/>
+ </aliases>
+</kb-project>

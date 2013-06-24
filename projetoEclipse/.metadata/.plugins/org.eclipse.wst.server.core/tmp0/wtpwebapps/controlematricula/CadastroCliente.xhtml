@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:rich="http://richfaces.org/rich"
+      >
+    <h:body>
+ 
+    	<ui:composition template="/template/common/commonLayout.xhtml">
+ 
+    		<ui:define name="content">
+				<h:form> 
+				<h:panelGrid styleClass="grid" columns="3" id="editGrid">
+						<h:outputText value="CPF:" />
+		                <h:inputText value="#{MbCliente.cliente.cpf}" required="true" requiredMessage="CPF é requerido" id="cpf" validatorMessage="O cpf deve ter no minimo 3 posicoes">
+		                <f:validateLength minimum="3"/>
+		                </h:inputText>
+		                <rich:message id="cpfMsg" for="cpf" />
+		            	<h:outputText value="Nome:" />
+		                <h:inputText value="#{MbCliente.cliente.nome}" required="true" requiredMessage="Nome é requerido" id="nome" validatorMessage="Should be a valid price">
+		                <f:validateLength minimum="3"/>
+		                </h:inputText>
+		                <rich:message id="nomeMsg" for="nome" />
+		            	<h:outputText value="Email:" />
+		                <h:inputText value="#{MbCliente.cliente.email}" required="true" requiredMessage="Email é requerido" id="email" validatorMessage="Should be a valid price">
+		                <f:validateLength minimum="3"/>
+		                </h:inputText>
+		                <rich:message id="emailMsg" for="email" />
+            		
+           			 </h:panelGrid>
+					<h:commandButton  value="salvar" action="#{MbCliente.salvar}"/>
+				  <h:commandButton value="voltar" action="ListagemCliente.xhtml" /><h:commandButton value="limpa" action="#{MbCliente.limpaCampos}" />
+				</h:form>
+    		</ui:define>
+ 
+    	</ui:composition>
+ 
+    </h:body>
+ 
+</html>
