@@ -125,7 +125,7 @@
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
 
-      <Context docBase="C:\Users\Pedro\Documents\GitHub\controlematricula\projetoEclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\Pedro\Documents\GitHub\controlematricula\projetoEclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\controlematricula" path="/controlematricula" reloadable="true" source="org.eclipse.jst.jee.server:controlematricula"/></Host>
+      <Context docBase="G:\java\Github\controlematricula\projetoEclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="G:\java\Github\controlematricula\projetoEclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\controlematricula" path="/controlematricula" reloadable="true" source="org.eclipse.jst.jee.server:controlematricula"/></Host>
     </Engine>
   </Service>
 </Server>

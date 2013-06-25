@@ -11,5 +11,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/hibernate-4.1.7"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jsf"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mysql"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/richFaces"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

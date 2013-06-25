@@ -11,11 +11,20 @@ import javax.faces.context.FacesContext;
 @ManagedBean(name="MBAluno")
 @SessionScoped
 public class MBAluno {
-	
+		
 	private static MBAluno MBAluno = new MBAluno();
 	private Aluno aluno;
+	private int pagina=1;
 	public MBAluno(){
 		aluno = new Aluno();
+	}	
+	
+	public int getPagina() {
+		return pagina;
+	}
+
+	public void setPagina(int pagina) {
+		this.pagina = pagina;
 	}
 
 	public String cadastrarAluno() {
@@ -27,9 +36,10 @@ public class MBAluno {
 
 	public String apagarAluno() throws ClassNotFoundException, SQLException {
 		// pega o parametro passado no link
-		Integer id = Integer.parseInt((String)FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap().get("id"));
+		Integer id = Integer.parseInt((String)FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap().get("idaluno"));
 		String retorno ="";
 		AlunoDAOImpl daoAluno = new AlunoDAOImpl();
+		aluno.setIdaluno(id);
 		daoAluno.remove(aluno);
 		return retorno;
 	}
