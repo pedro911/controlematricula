@@ -29,7 +29,8 @@ public abstract class DAOImpl<T, I extends Serializable> implements DAOGenerico<
 	@Override
 	public void remove(T entity) {
 		getEntityManager().getTransaction().begin();
-		getEntityManager().remove(entity);
+		Object c = getEntityManager().merge(entity);
+		getEntityManager().remove(c);
 		getEntityManager().getTransaction().commit();
 
 	}
@@ -51,7 +52,6 @@ public abstract class DAOImpl<T, I extends Serializable> implements DAOGenerico<
 
 		return getEntityManager().createQuery("select o from " + classe.getSimpleName() + " o").getResultList();
 	}
-
 
 
 }

@@ -15,10 +15,22 @@ public class MBAluno {
 	private static MBAluno MBAluno = new MBAluno();
 	private Aluno aluno;
 	private int pagina=1;
+	private Integer idSelecionado;
+	
 	public MBAluno(){
 		aluno = new Aluno();
-	}	
+	}
 	
+	public Integer getIdSelecionado() {
+		return idSelecionado;
+	}
+
+	public void setIdSelecionado(Integer idSelecionado) {
+		System.out.println("SET idSelecionado = "+idSelecionado);
+
+		this.idSelecionado = idSelecionado;
+	}
+		
 	public int getPagina() {
 		return pagina;
 	}
@@ -28,25 +40,26 @@ public class MBAluno {
 	}
 
 	public String cadastrarAluno() {
-		String retorno="Usuário cadastrado com sucesso";
+		String retorno="Aluno cadastrado com sucesso";
 		AlunoDAOImpl daoAluno = new AlunoDAOImpl();
 		daoAluno.save(aluno);
 		return retorno;
 	}
 
-	public String apagarAluno() throws ClassNotFoundException, SQLException {
+	//public String apagarAluno() throws ClassNotFoundException, SQLException {
+	public void apagarAluno() throws ClassNotFoundException, SQLException{
 		// pega o parametro passado no link
 		Integer id = Integer.parseInt((String)FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap().get("idaluno"));
-		String retorno ="";
+		//String retorno ="";
 		AlunoDAOImpl daoAluno = new AlunoDAOImpl();
-		aluno.setIdaluno(id);
+		aluno = retornarAluno(id);
 		daoAluno.remove(aluno);
-		return retorno;
+		//return retorno;
 	}
 
 	public String editarAluno() throws ClassNotFoundException, SQLException{
 		// pega o parametro passado no link
-		Integer id = Integer.parseInt((String)FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap().get("id"));
+		Integer id = Integer.parseInt((String)FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap().get("idaluno"));
 		String retorno ="Usuário alterado com sucesso";
 		//aluno = retornarAluno(id);
 
@@ -64,7 +77,7 @@ public class MBAluno {
 	}
 	public Aluno retornarAluno() throws ClassNotFoundException, SQLException{
 
-		Integer id = Integer.parseInt((String)FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap().get("id"));
+		Integer id = Integer.parseInt((String)FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap().get("idaluno"));
 		AlunoDAOImpl daoAluno = new AlunoDAOImpl();
 		aluno =  daoAluno.getById(Aluno.class, id);
 		return aluno ;
@@ -89,7 +102,7 @@ public class MBAluno {
 
 	public String novo() {
 		aluno = new Aluno();
-		return "inserirAluno.jsp";
+		return "CadastroAluno.xhtml";
 	}
 	public String editar() {
 		try {
@@ -101,12 +114,17 @@ public class MBAluno {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return "inserirAluno.jsp";
+		return "CadastroAluno.xhtml";
 	}
 
 	public String salvar() {
 		cadastrarAluno();
-		return "ListagemAluno.jsp";
+		return "ListagemAluno.xhtml";
+	}
+		
+	public String alunos() throws ClassNotFoundException, SQLException {
+		getAlunos();
+		return "ListagemAluno.xhtml";
 	}
 
 }

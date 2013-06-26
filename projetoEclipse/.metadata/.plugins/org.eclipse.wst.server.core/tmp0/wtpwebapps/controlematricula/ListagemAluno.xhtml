@@ -18,13 +18,16 @@
         }
     </h:outputStylesheet>
         <a4j:outputPanel ajaxRendered="true">
-        <h:outputText styleClass="titulo" value="Listagem aluno "></h:outputText>
+        <h:outputText styleClass="titulo" value="Listagem alunos"></h:outputText>           
     </a4j:outputPanel>
-    
+          
     <!-- <a4j:status onstart="#{rich:component('statPane')}.show()" onstop="#{rich:component('statPane')}.hide()" /> -->
     <h:form id="form">
-    <h:commandButton value="novo" styleClass="botaoNovo" action="#{MBAluno.novo}" />
-    
+        <h:commandButton value="novo" styleClass="botaoNovo" action="#{MBAluno.novo}" />
+        <br />
+        <br />
+        <br />
+                
         <rich:dataTable value="#{MBAluno.alunos}" var="car" iterationStatusVar="it" id="table" rows="10">
             <rich:column>
                 <f:facet name="header">#</f:facet>
@@ -35,31 +38,29 @@
                 <h:outputText value="#{car.nome}" />
             </rich:column>
              <rich:column>
-                <f:facet name="header">email</f:facet>
+                <f:facet name="header">E-mail</f:facet>
                 <h:outputText value="#{car.email}" />
             </rich:column>
             
             
             <rich:column>
-             
+            	<f:facet name="header">Ação</f:facet> 
                 <h:commandLink action="#{MBAluno.editar}">
-                	 <f:param name="id"  value="#{car.idaluno}"/>
+                	 <f:param name="idaluno"  value="#{car.idaluno}"/>
                 	<h:graphicImage value="/images/edit.gif" alt="edit" />
                  </h:commandLink>
 
                  <h:commandLink action="#{MBAluno.apagarAluno}" >
-                	 <f:param name="id"  value="#{car.idaluno}"/>
+                	 <f:param name="idaluno"  value="#{car.idaluno}"/>
                 	<h:graphicImage value="/images/delete.gif" alt="edit" />
                  </h:commandLink>
-                
-                
-                 
             </rich:column> 
+            
             <f:facet name="footer">
                 <rich:dataScroller page="#{MBAluno.pagina}" />
             </f:facet>
-        </rich:dataTable>
-        
+        </rich:dataTable>                 
+                 
     </h:form>
     </ui:define>
 </ui:composition>
