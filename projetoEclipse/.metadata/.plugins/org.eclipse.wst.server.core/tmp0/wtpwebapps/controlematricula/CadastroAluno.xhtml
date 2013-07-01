@@ -16,13 +16,13 @@
 				<h:panelGrid styleClass="grid" columns="3" id="editGrid">
 						
 						<h:outputText value="Nome:" />
-		                <h:inputText value="#{MBAluno.aluno.nome}" required="true" requiredMessage="Nome é requerido" id="nome" validatorMessage="Should be a valid price">
+		                <h:inputText value="#{MBAluno.aluno.nome}" required="true" requiredMessage="Nome é requerido" id="nome" validatorMessage="O nome deve conter no mínimo 3 caracteres">
 		                <f:validateLength minimum="3"/>
 		                </h:inputText>
 		                <rich:message id="nomeMsg" for="nome" />
 		            	
 		            	<h:outputText value="Email:" />
-		                <h:inputText value="#{MBAluno.aluno.email}" required="true" requiredMessage="Email é requerido" id="email" validatorMessage="Should be a valid price">
+		                <h:inputText value="#{MBAluno.aluno.email}" required="true" requiredMessage="Email é requerido" id="email" validatorMessage="E-mail inválido">
 		                <f:validateLength minimum="3"/>
 		                </h:inputText>
 		                <rich:message id="emailMsg" for="email" />

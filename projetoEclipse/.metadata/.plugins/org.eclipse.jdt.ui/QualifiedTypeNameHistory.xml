@@ -3,4 +3,12 @@
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="org.hibernate.annotations.common.util.impl.Log"/>
 <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.HibernateValidator"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.NotEmpty"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.Pattern"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.Length"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.Min"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.Max"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.Email"/>
 </qualifiedTypeNameHistroy>

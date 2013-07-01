@@ -41,6 +41,7 @@
    </libraries>
   </path>
   <path value="C:/libsjava/hibernate-4.1.7/hibernate-core-4.1.7.Final.jar"/>
+  <path value="C:/libsjava/hibernate-4.1.7/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
   <path value="C:/libsjava/richfaces/richfaces-components-api-4.3.2.Final.jar"/>
   <path value="C:/libsjava/jsf/javax.faces-2.0.9.jar">
    <libraries>
@@ -62,12 +63,12 @@
     </library>
    </libraries>
   </path>
-  <path value="C:/libsjava/hibernate-4.1.7/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
   <path value="G:/java/Github/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/dom4j-1.6.1.jar"/>
   <path value="G:/java/Github/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/sac-1.3.jar"/>
   <path value="C:/libsjava/jsf/javax.servlet.jsp.jstl-api-1.2.1.jar"/>
-  <path value="G:/java/Github/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/jsf-api.jar"/>
+  <path value="C:/libsjava/bean validator/hibernate-validator-5.0.1.Final.jar"/>
   <path value="G:/java/Github/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar"/>
+  <path value="G:/java/Github/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/jsf-api.jar"/>
   <path value="C:/libsjava/richfaces/sac-1.3.jar"/>
   <path value="C:/libsjava/richfaces/richfaces-core-api-4.3.2.Final.jar"/>
   <path value="G:/java/Github/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/richfaces-components-api-4.3.2.Final.jar"/>
@@ -257,7 +258,9 @@
   </path>
   <path value="G:/java/Github/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/javassist-3.15.0-GA.jar"/>
   <path value="C:/libsjava/hibernate-4.1.7/hibernate-commons-annotations-4.0.1.Final.jar"/>
+  <path value="C:/libsjava/bean validator/validation-api-1.0.0.GA.jar"/>
   <path value="C:/libsjava/richfaces/atmosphere-runtime-1.1.0.RC3.jar"/>
+  <path value="G:/java/Github/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/hibernate-entitymanager-4.1.7.Final.jar"/>
   <path value="G:/java/Github/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/javax.faces-2.0.9.jar">
    <libraries>
     <library class="tld">
@@ -278,7 +281,6 @@
     </library>
    </libraries>
   </path>
-  <path value="G:/java/Github/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/hibernate-entitymanager-4.1.7.Final.jar"/>
   <path value="G:/java/Github/controlematricula/projetoEclipse/controlematricula/WebContent/WEB-INF/lib/mysql-connector-java-3.0.11-stable-bin.jar"/>
   <path value="C:/libsjava/jsf/jsf-impl.jar">
    <libraries>
@@ -309,148 +311,168 @@
   <core validator-id="jboss.jsf.core"/>
   <el>
    <linked-el length="14" name="%0" offset="1429" path="%1"/>
-   <linked-el length="11" name="%0" offset="1998" path="%2"/>
-   <linked-el length="14" name="%0" offset="1448" path="%2"/>
-   <linked-el length="11" name="%0" offset="2238" path="%2"/>
-   <linked-el length="16" name="%0" offset="1952" path="%3"/>
-   <linked-el length="16" name="%0" offset="2198" path="%3"/>
+   <linked-el length="16" name="%0" offset="1952" path="%2"/>
+   <linked-el length="16" name="%0" offset="2198" path="%2"/>
    <linked-el length="11" name="%0" offset="2211" path="%1"/>
    <linked-el length="15" name="%0" offset="1756" path="%1"/>
-   <linked-el length="13" name="%0" offset="1611" path="%2"/>
-   <linked-el length="15" name="%0" offset="1688" path="%3"/>
    <linked-el length="11" name="%0" offset="2448" path="%1"/>
-   <linked-el length="14" name="%0" offset="1521" path="%3"/>
+   <linked-el length="15" name="%0" offset="1688" path="%2"/>
+   <linked-el length="14" name="%0" offset="1521" path="%2"/>
+   <linked-el length="22" name="%0" offset="1987" path="%3"/>
    <linked-el length="13" name="%0" offset="1592" path="%1"/>
-   <linked-el length="15" name="%0" offset="1775" path="%2"/>
+   <linked-el length="22" name="%0" offset="2257" path="%3"/>
+   <linked-el length="14" name="%0" offset="1545" path="%3"/>
+   <linked-el length="15" name="%0" offset="1711" path="%3"/>
    <linked-el length="43" name="%4" offset="1252" path="%1"/>
-   <linked-el length="43" name="%4" offset="1271" path="%2"/>
-   <linked-el length="43" name="%4" offset="1344" path="%3"/>
-   <linked-el length="25" name="%5" offset="1113" path="%6"/>
-   <linked-el length="18" name="%5" offset="1072" path="%3"/>
-   <linked-el length="19" name="%5" offset="1485" path="%6"/>
-   <linked-el length="19" name="%5" offset="1444" path="%7"/>
-   <linked-el length="16" name="%5" offset="1952" path="%3"/>
-   <linked-el length="16" name="%5" offset="2198" path="%3"/>
-   <linked-el length="15" name="%5" offset="1688" path="%3"/>
-   <linked-el length="14" name="%5" offset="1521" path="%3"/>
-   <linked-el length="25" name="%5" offset="1072" path="%7"/>
-   <linked-el length="20" name="%5" offset="1190" path="%3"/>
-   <linked-el length="24" name="%5" offset="695" path="%7"/>
-   <linked-el length="20" name="%5" offset="2448" path="%3"/>
-   <linked-el length="25" name="%5" offset="2121" path="%3"/>
-   <linked-el length="24" name="%5" offset="753" path="%6"/>
-   <linked-el length="19" name="%5" offset="1881" path="%3"/>
-   <linked-el length="21" name="%8" offset="1930" path="%2"/>
+   <linked-el length="43" name="%4" offset="1344" path="%2"/>
+   <linked-el length="43" name="%4" offset="1368" path="%3"/>
+   <linked-el length="14" name="%5" offset="1521" path="%2"/>
+   <linked-el length="19" name="%5" offset="1454" path="%6"/>
+   <linked-el length="25" name="%5" offset="1090" path="%6"/>
+   <linked-el length="24" name="%5" offset="695" path="%6"/>
+   <linked-el length="20" name="%5" offset="1190" path="%2"/>
+   <linked-el length="18" name="%5" offset="1072" path="%2"/>
+   <linked-el length="16" name="%5" offset="1952" path="%2"/>
+   <linked-el length="20" name="%5" offset="2448" path="%2"/>
+   <linked-el length="16" name="%5" offset="2198" path="%2"/>
+   <linked-el length="25" name="%5" offset="2121" path="%2"/>
+   <linked-el length="19" name="%5" offset="1881" path="%2"/>
+   <linked-el length="15" name="%5" offset="1688" path="%2"/>
+   <linked-el length="42" name="%7" offset="1991" path="%1"/>
+   <linked-el length="57" name="%7" offset="3364" path="%1"/>
+   <linked-el length="43" name="%7" offset="2942" path="%1"/>
    <linked-el length="23" name="%8" offset="2323" path="%1"/>
    <linked-el length="29" name="%8" offset="2176" path="%1"/>
-   <linked-el length="29" name="%8" offset="2162" path="%2"/>
-   <linked-el length="24" name="%8" offset="1113" path="%2"/>
-   <linked-el length="20" name="%8" offset="1053" path="%2"/>
    <linked-el length="24" name="%8" offset="1095" path="%1"/>
    <linked-el length="20" name="%8" offset="1035" path="%1"/>
    <linked-el length="29" name="%8" offset="2413" path="%1"/>
-   <linked-el length="22" name="%8" offset="2524" path="%2"/>
    <linked-el length="29" name="%8" offset="2858" path="%1"/>
    <linked-el length="22" name="%8" offset="2736" path="%1"/>
-   <linked-el length="42" name="%9" offset="1991" path="%1"/>
-   <linked-el length="43" name="%9" offset="2942" path="%1"/>
-   <linked-el length="57" name="%9" offset="3364" path="%1"/>
-   <linked-el length="29" name="%10" offset="2162" path="%2"/>
-   <linked-el length="29" name="%10" offset="2858" path="%1"/>
-   <linked-el length="11" name="%11" offset="1998" path="%2"/>
-   <linked-el length="11" name="%11" offset="2238" path="%2"/>
-   <linked-el length="11" name="%11" offset="2211" path="%1"/>
-   <linked-el length="11" name="%11" offset="2448" path="%1"/>
-   <linked-el length="21" name="%12" offset="1930" path="%2"/>
-   <linked-el length="23" name="%12" offset="2323" path="%1"/>
-   <linked-el length="24" name="%13" offset="1095" path="%1"/>
-   <linked-el length="24" name="%13" offset="1113" path="%2"/>
-   <linked-el length="22" name="%14" offset="2524" path="%2"/>
-   <linked-el length="22" name="%14" offset="2736" path="%1"/>
-   <linked-el length="16" name="%15" offset="1952" path="%3"/>
-   <linked-el length="16" name="%15" offset="2198" path="%3"/>
-   <linked-el length="15" name="%16" offset="1775" path="%2"/>
-   <linked-el length="15" name="%16" offset="1756" path="%1"/>
-   <linked-el length="15" name="%16" offset="1688" path="%3"/>
-   <linked-el length="25" name="%17" offset="1072" path="%7"/>
-   <linked-el length="25" name="%17" offset="1113" path="%6"/>
-   <linked-el length="24" name="%17" offset="695" path="%7"/>
-   <linked-el length="24" name="%17" offset="753" path="%6"/>
-   <linked-el length="43" name="%18" offset="1252" path="%1"/>
-   <linked-el length="43" name="%18" offset="1271" path="%2"/>
-   <linked-el length="43" name="%18" offset="1344" path="%3"/>
-   <linked-el length="14" name="%19" offset="1521" path="%3"/>
-   <linked-el length="25" name="%19" offset="1072" path="%7"/>
-   <linked-el length="20" name="%19" offset="1190" path="%3"/>
-   <linked-el length="24" name="%19" offset="695" path="%7"/>
-   <linked-el length="18" name="%19" offset="1072" path="%3"/>
-   <linked-el length="19" name="%19" offset="1444" path="%7"/>
-   <linked-el length="16" name="%19" offset="1952" path="%3"/>
-   <linked-el length="20" name="%19" offset="2448" path="%3"/>
-   <linked-el length="16" name="%19" offset="2198" path="%3"/>
-   <linked-el length="25" name="%19" offset="2121" path="%3"/>
-   <linked-el length="19" name="%19" offset="1881" path="%3"/>
-   <linked-el length="15" name="%19" offset="1688" path="%3"/>
-   <linked-el length="13" name="%20" offset="1592" path="%1"/>
-   <linked-el length="13" name="%20" offset="1611" path="%2"/>
-   <linked-el length="14" name="%21" offset="1521" path="%3"/>
-   <linked-el length="14" name="%21" offset="1429" path="%1"/>
-   <linked-el length="14" name="%21" offset="1448" path="%2"/>
-   <linked-el length="20" name="%22" offset="1035" path="%1"/>
-   <linked-el length="20" name="%22" offset="1053" path="%2"/>
-   <linked-el length="29" name="%23" offset="2176" path="%1"/>
-   <linked-el length="29" name="%23" offset="2413" path="%1"/>
+   <linked-el length="37" name="%9" offset="1102" path="%10"/>
+   <linked-el length="37" name="%9" offset="1518" path="%10"/>
+   <linked-el length="36" name="%9" offset="695" path="%10"/>
+   <linked-el length="29" name="%11" offset="2858" path="%1"/>
+   <linked-el length="15" name="%12" offset="1711" path="%3"/>
+   <linked-el length="11" name="%13" offset="2211" path="%1"/>
+   <linked-el length="11" name="%13" offset="2448" path="%1"/>
+   <linked-el length="22" name="%14" offset="1987" path="%3"/>
+   <linked-el length="22" name="%14" offset="2257" path="%3"/>
+   <linked-el length="23" name="%15" offset="2323" path="%1"/>
+   <linked-el length="24" name="%16" offset="1095" path="%1"/>
+   <linked-el length="37" name="%17" offset="1102" path="%10"/>
+   <linked-el length="25" name="%17" offset="1904" path="%3"/>
+   <linked-el length="22" name="%17" offset="1987" path="%3"/>
+   <linked-el length="25" name="%17" offset="1934" path="%10"/>
+   <linked-el length="22" name="%17" offset="2257" path="%3"/>
+   <linked-el length="24" name="%17" offset="1078" path="%3"/>
+   <linked-el length="37" name="%17" offset="1518" path="%10"/>
+   <linked-el length="32" name="%17" offset="1202" path="%3"/>
+   <linked-el length="36" name="%17" offset="695" path="%10"/>
+   <linked-el length="14" name="%17" offset="1545" path="%3"/>
+   <linked-el length="37" name="%17" offset="2162" path="%3"/>
+   <linked-el length="15" name="%17" offset="1711" path="%3"/>
+   <linked-el length="22" name="%18" offset="2736" path="%1"/>
+   <linked-el length="16" name="%19" offset="1952" path="%2"/>
+   <linked-el length="16" name="%19" offset="2198" path="%2"/>
+   <linked-el length="15" name="%20" offset="1756" path="%1"/>
+   <linked-el length="15" name="%20" offset="1688" path="%2"/>
+   <linked-el length="37" name="%21" offset="1102" path="%10"/>
+   <linked-el length="25" name="%21" offset="1904" path="%3"/>
+   <linked-el length="22" name="%21" offset="1987" path="%3"/>
+   <linked-el length="25" name="%21" offset="1934" path="%10"/>
+   <linked-el length="22" name="%21" offset="2257" path="%3"/>
+   <linked-el length="24" name="%21" offset="1078" path="%3"/>
+   <linked-el length="37" name="%21" offset="1518" path="%10"/>
+   <linked-el length="32" name="%21" offset="1202" path="%3"/>
+   <linked-el length="36" name="%21" offset="695" path="%10"/>
+   <linked-el length="14" name="%21" offset="1545" path="%3"/>
+   <linked-el length="37" name="%21" offset="2162" path="%3"/>
+   <linked-el length="15" name="%21" offset="1711" path="%3"/>
+   <linked-el length="25" name="%22" offset="1090" path="%6"/>
+   <linked-el length="24" name="%22" offset="695" path="%6"/>
+   <linked-el length="43" name="%23" offset="1252" path="%1"/>
+   <linked-el length="43" name="%23" offset="1344" path="%2"/>
+   <linked-el length="43" name="%23" offset="1368" path="%3"/>
+   <linked-el length="13" name="%24" offset="1592" path="%1"/>
+   <linked-el length="14" name="%25" offset="1429" path="%1"/>
+   <linked-el length="14" name="%25" offset="1521" path="%2"/>
+   <linked-el length="14" name="%25" offset="1545" path="%3"/>
+   <linked-el length="14" name="%26" offset="1521" path="%2"/>
+   <linked-el length="19" name="%26" offset="1454" path="%6"/>
+   <linked-el length="25" name="%26" offset="1090" path="%6"/>
+   <linked-el length="24" name="%26" offset="695" path="%6"/>
+   <linked-el length="20" name="%26" offset="1190" path="%2"/>
+   <linked-el length="18" name="%26" offset="1072" path="%2"/>
+   <linked-el length="16" name="%26" offset="1952" path="%2"/>
+   <linked-el length="20" name="%26" offset="2448" path="%2"/>
+   <linked-el length="16" name="%26" offset="2198" path="%2"/>
+   <linked-el length="25" name="%26" offset="2121" path="%2"/>
+   <linked-el length="19" name="%26" offset="1881" path="%2"/>
+   <linked-el length="15" name="%26" offset="1688" path="%2"/>
+   <linked-el length="20" name="%27" offset="1035" path="%1"/>
+   <linked-el length="29" name="%28" offset="2176" path="%1"/>
+   <linked-el length="29" name="%28" offset="2413" path="%1"/>
   </el>
  </validation>
  <aliases>
   <alias path="car" value="%0"/>
+  <alias path="MbCliente" value="%8"/>
+  <alias path="/controlematricula/src/funcionario/Funcionario.java" value="%9"/>
+  <alias path="MbCliente.apagarCliente" value="%11"/>
+  <alias path="car.login" value="%12"/>
+  <alias path="car.id" value="%13"/>
+  <alias path="car.idfuncionario" value="%14"/>
+  <alias path="MbCliente.clientes" value="%16"/>
+  <alias path="/controlematricula/WebContent/ListagemAluno.xhtml" value="%2"/>
+  <alias path="MbCliente.pagina" value="%18"/>
+  <alias path="it.index" value="%23"/>
+  <alias path="/controlematricula/src/aluno/MBAluno.java" value="%26"/>
+  <alias path="car.nome" value="%25"/>
+  <alias path="car.cpf" value="%24"/>
+  <alias path="MbCliente.idSelecionado" value="%28"/>
+  <alias path="/controlematricula/WebContent/ListagemFuncionario.xhtml" value="%3"/>
   <alias path="/controlematricula/WebContent/ListagemClienteAJAX.xhtml" value="%1"/>
-  <alias path="/controlematricula/WebContent/CadastroAluno.xhtml" value="%7"/>
+  <alias path="/controlematricula/WebContent/CadastroAluno.xhtml" value="%6"/>
   <alias path="it" value="%4"/>
   <alias path="MBAluno" value="%5"/>
-  <alias path="MbCliente" value="%8"/>
-  <alias path="rich" value="%9"/>
-  <alias path="MbCliente.apagarCliente" value="%10"/>
-  <alias path="car.id" value="%11"/>
-  <alias path="MbCliente.editar" value="%12"/>
-  <alias path="MbCliente.clientes" value="%13"/>
-  <alias path="MbCliente.pagina" value="%14"/>
-  <alias path="/controlematricula/WebContent/ListagemAluno.xhtml" value="%3"/>
-  <alias path="car.idaluno" value="%15"/>
-  <alias path="car.email" value="%16"/>
-  <alias path="/controlematricula/src/aluno/Aluno.java" value="%17"/>
-  <alias path="/controlematricula/WebContent/ListagemCliente.xhtml" value="%2"/>
-  <alias path="it.index" value="%18"/>
-  <alias path="car.nome" value="%21"/>
-  <alias path="car.cpf" value="%20"/>
-  <alias path="/controlematricula/src/aluno/MBAluno.java" value="%19"/>
-  <alias path="/controlematricula/WebContent/CadastroCliente.xhtml" value="%6"/>
-  <alias path="MbCliente.novo" value="%22"/>
-  <alias path="MbCliente.idSelecionado" value="%23"/>
+  <alias path="rich" value="%7"/>
+  <alias path="MbCliente.editar" value="%15"/>
+  <alias path="MBFuncionario" value="%17"/>
+  <alias path="car.idaluno" value="%19"/>
+  <alias path="car.email" value="%20"/>
+  <alias path="/controlematricula/src/funcionario/MBFuncionario.java" value="%21"/>
+  <alias path="/controlematricula/src/aluno/Aluno.java" value="%22"/>
+  <alias path="/controlematricula/WebContent/CadastroFuncionario.xhtml" value="%10"/>
+  <alias path="MbCliente.novo" value="%27"/>
+  <alias path="%26" value="/controlematricula/src/aluno/MBAluno.java"/>
+  <alias path="%25" value="car.nome"/>
+  <alias path="%28" value="MbCliente.idSelecionado"/>
+  <alias path="%27" value="MbCliente.novo"/>
+  <alias path="%20" value="car.email"/>
+  <alias path="%22" value="/controlematricula/src/aluno/Aluno.java"/>
+  <alias path="%21" value="/controlematricula/src/funcionario/MBFuncionario.java"/>
+  <alias path="%24" value="car.cpf"/>
+  <alias path="%23" value="it.index"/>
   <alias path="%0" value="car"/>
   <alias path="%4" value="it"/>
-  <alias path="%3" value="/controlematricula/WebContent/ListagemAluno.xhtml"/>
-  <alias path="%2" value="/controlematricula/WebContent/ListagemCliente.xhtml"/>
+  <alias path="%3" value="/controlematricula/WebContent/ListagemFuncionario.xhtml"/>
+  <alias path="%2" value="/controlematricula/WebContent/ListagemAluno.xhtml"/>
   <alias path="%1" value="/controlematricula/WebContent/ListagemClienteAJAX.xhtml"/>
-  <alias path="%17" value="/controlematricula/src/aluno/Aluno.java"/>
-  <alias path="%7" value="/controlematricula/WebContent/CadastroAluno.xhtml"/>
-  <alias path="%16" value="car.email"/>
+  <alias path="%7" value="rich"/>
+  <alias path="%17" value="MBFuncionario"/>
+  <alias path="%16" value="MbCliente.clientes"/>
   <alias path="%8" value="MbCliente"/>
-  <alias path="%15" value="car.idaluno"/>
   <alias path="%5" value="MBAluno"/>
-  <alias path="%6" value="/controlematricula/WebContent/CadastroCliente.xhtml"/>
-  <alias path="%14" value="MbCliente.pagina"/>
-  <alias path="%19" value="/controlematricula/src/aluno/MBAluno.java"/>
-  <alias path="%9" value="rich"/>
-  <alias path="%18" value="it.index"/>
-  <alias path="%20" value="car.cpf"/>
-  <alias path="%22" value="MbCliente.novo"/>
-  <alias path="%13" value="MbCliente.clientes"/>
-  <alias path="%21" value="car.nome"/>
-  <alias path="%12" value="MbCliente.editar"/>
-  <alias path="%11" value="car.id"/>
-  <alias path="%23" value="MbCliente.idSelecionado"/>
-  <alias path="%10" value="MbCliente.apagarCliente"/>
+  <alias path="%15" value="MbCliente.editar"/>
+  <alias path="%14" value="car.idfuncionario"/>
+  <alias path="%6" value="/controlematricula/WebContent/CadastroAluno.xhtml"/>
+  <alias path="%9" value="/controlematricula/src/funcionario/Funcionario.java"/>
+  <alias path="%19" value="car.idaluno"/>
+  <alias path="%18" value="MbCliente.pagina"/>
+  <alias path="%13" value="car.id"/>
+  <alias path="%12" value="car.login"/>
+  <alias path="%11" value="MbCliente.apagarCliente"/>
+  <alias path="%10" value="/controlematricula/WebContent/CadastroFuncionario.xhtml"/>
  </aliases>
  <includes/>
 </kb-project>

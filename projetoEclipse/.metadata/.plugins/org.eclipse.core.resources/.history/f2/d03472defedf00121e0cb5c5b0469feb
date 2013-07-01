@@ -1,0 +1,7 @@
+package funcionario;
+
+import util.DAOGenerico;
+
+public interface FuncionarioDAO extends DAOGenerico<Aluno, Integer> {
+
+}

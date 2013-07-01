@@ -1,0 +1,20 @@
+package funcionario;
+
+import javax.persistence.NoResultException;
+
+import util.DAOImpl;
+
+public class FuncionarioDAOImpl extends DAOImpl<Funcionario, Integer>{
+		
+	@Override
+	public Funcionario getByLogin(Funcionario classe, String login) {
+
+		try {
+			return getEntityManager().find(classe, login);
+		} catch (NoResultException e) {
+			return null;
+		}
+
+	}
+	
+}

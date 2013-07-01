@@ -2,6 +2,8 @@ package aluno;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 
 /**
@@ -16,6 +18,8 @@ public class Aluno implements Serializable {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int idaluno;
 
+	@NotNull
+	@Pattern(regexp = "^[\\w\\-]+(\\.[\\w\\-]+)*@([A-Za-z0-9-]+\\.)+[A-Za-z]{2,4}$", message="E-mail com formato incorreto.")
 	private String email;
 
 	private String nome;

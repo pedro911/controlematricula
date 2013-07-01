@@ -12,5 +12,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jsf"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mysql"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/richFaces"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/beanValidator"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
