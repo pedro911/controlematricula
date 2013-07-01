@@ -1,25 +1,15 @@
-<html>
-<!--
 <?xml version="1.0" encoding="UTF-8"?>
-  <WISPAccessGatewayParam
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:noNamespaceSchemaLocation="http://172.16.0.1/xml/WISPAccessGatewayParam.xsd">
-    <Redirect>
-	<AccessProcedure>1.0</AccessProcedure>
-	<AccessLocation></AccessLocation>
-	<LocationName></LocationName>
-	<LoginURL>http://172.16.0.1/login?target=xml</LoginURL>
-	<MessageType>100</MessageType>
-	<ResponseCode>0</ResponseCode>
-    </Redirect>
-  </WISPAccessGatewayParam>
--->
-<head>
-<title>...</title>
-<meta http-equiv="refresh" content="0; url=http://172.16.0.1/login?dst=http%3A%2F%2Fdownload.jboss.org%2Fjbosstools%2Fexamples%2Fproject-examples-category-3.3.xml">
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="expires" content="-1">
-</head>
-<body>
-</body>
-</html>
+<categories>
+
+  <category name="JBoss Quickstarts"
+  	description="These quickstarts are aimed to get you up to writing applications with minimal fuss. We recommend that you work through the quickstarts in the order they are presented in this guide, however if you have previous experience with Java EE 6, you may wish to skip some or all of the quickstarts."
+  	priority="1" />
+  	
+  <category name="JBoss Application Server 7 Quickstarts"
+  	description="These quickstarts are aimed to get you up to writing applications with minimal fuss. We recommend that you work through the quickstarts in the order they are presented in this guide, however if you have previous experience with Java EE 6, you may wish to skip some or all of the quickstarts."
+  	priority="1" />
+  	
+  <category name="JBoss Maven Archetypes"
+    priority="2" />
+    
+</categories>
