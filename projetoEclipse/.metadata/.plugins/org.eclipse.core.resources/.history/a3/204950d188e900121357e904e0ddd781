@@ -1,0 +1,40 @@
+#page{
+	width: 800px;
+	margin: 0 auto;
+}
+
+#header{
+	width: 100%;
+}
+
+
+#content{
+	width: 100%;
+	margin-right:16px;
+	margin-bottom:16px;
+}
+#content table{
+	width: 100%;
+}
+
+#footer{
+	width: 100%;
+	height:100px;
+}
+
+.titulo{
+	font-weight:bold;
+	font-size: 16px;
+	padding-bottom: 40px;
+}
+.botaoNovo{
+	margin-top: 20px;
+	float: right;
+}
+.grid  {
+    width: 50%;
+    
+}
+.rich-calendar-input {
+ 	width: 50px;
+ }

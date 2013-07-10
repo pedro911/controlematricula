@@ -19,4 +19,7 @@
 <fullyQualifiedTypeName name="aluno.MBAluno"/>
 <fullyQualifiedTypeName name="curso.MBCurso"/>
 <fullyQualifiedTypeName name="funcionario.MBFuncionario"/>
+<fullyQualifiedTypeName name="javax.faces.validator.Validator"/>
+<fullyQualifiedTypeName name="javax.faces.application.FacesMessage"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.Size"/>
 </qualifiedTypeNameHistroy>

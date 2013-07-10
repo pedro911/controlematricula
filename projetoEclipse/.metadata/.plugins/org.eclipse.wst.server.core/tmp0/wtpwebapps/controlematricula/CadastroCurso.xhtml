@@ -23,7 +23,7 @@
 		            	
 		            	<h:outputText value="Concurso:" />																		
 						<rich:select enableManualInput="true" value="#{MBCurso.concursoSelecionado}" defaultLabel="Digite ou selecione abaixo">
-                			<f:selectItems value="#{MBConcurso.listaConcursos}" var="concurso" itemValue="#{concurso.idconcurso}" itemLabel="#{concurso.nome}" />
+                		<f:selectItems value="#{MBConcurso.listaConcursos}" var="concurso" itemValue="#{concurso.idconcurso}" itemLabel="#{concurso.nome}" />
             			</rich:select>
 		            	<p></p>
 		            	<h:outputText value="Ementa:" />
@@ -32,17 +32,16 @@
 		                </h:inputText>
 		                <rich:message id="ementaMsg" for="ementa" />
 		                
-		                <h:outputText value="Data início (dd/MM/yyyy):" />
-		                <h:inputText value="#{MBCurso.curso.dtInicio}" required="true" requiredMessage="Data de início é requerida" id="dtInicio" validatorMessage="A data deve conter no mínimo 8 caracteres">
+		                <h:outputText value="Data início:" />
+		                <rich:calendar datePattern="dd/MM/yyyy"  value="#{MBCurso.curso.dtInicio}" required="true" requiredMessage="Data de início é requerida" id="dtInicio" validatorMessage="A data deve conter no mínimo 8 caracteres">
 		                <f:convertDateTime pattern="yyyy-MM-dd"/>
-		                </h:inputText>
+		                </rich:calendar>
 		                <rich:message id="dtInicioMsg" for="dtInicio" />
-		                
-		                <h:outputText value="Data fim (dd/MM/yyyy):" />
-		               
-		                <h:inputText value="#{MBCurso.curso.dtFim}" required="true" requiredMessage="Data de término é requerida" id="dtFim" validatorMessage="A data deve conter no mínimo 8 caracteres">
+		                                
+		                <h:outputText value="Data fim:" />		               
+		                <rich:calendar datePattern="dd/MM/yyyy" value="#{MBCurso.curso.dtFim}" required="true" requiredMessage="Data de término é requerida" id="dtFim" validatorMessage="A data deve conter no mínimo 8 caracteres">
 		                <f:convertDateTime pattern="yyyy-MM-dd"/>
-		                </h:inputText>
+		                </rich:calendar>
 		                <rich:message id="dtFimMsg" for="dtFim" />
 		                
 		                <h:outputText value="Quantidade de alunos:" />

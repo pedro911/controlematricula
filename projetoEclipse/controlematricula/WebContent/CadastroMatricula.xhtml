@@ -6,6 +6,7 @@
       xmlns:ui="http://java.sun.com/jsf/facelets"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:rich="http://richfaces.org/rich"
+      xmlns:a4j="http://richfaces.org/a4j"
       >
     <h:body>
  
@@ -39,7 +40,7 @@
 		                <rich:message id="valorMsg" for="valor" />
             			<p></p>            			
            			 </h:panelGrid>
-					<h:commandButton  value="salvar" action="#{MBMatricula.salvar}"/>
+					<a4j:commandButton  value="salvar" action="#{MBMatricula.salvar}"/>
 				  				
 				</h:form>
     		</ui:define>

@@ -4,9 +4,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
+import javax.validation.constraints.Size;
 
 import curso.Curso;
 import curso.MBCurso;
@@ -192,7 +194,6 @@ public class MBMatricula {
 		}
 		return "CadastroMatricula.xhtml";
 	}
-
 	public String salvar() {
 		cadastrarMatricula();
 		return "ListagemMatricula.xhtml";

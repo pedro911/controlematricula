@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:rich="http://richfaces.org/rich"
+      >
+    <h:body>
+ 
+    	<ui:composition template="/template/common/commonLayout.xhtml">
+ 
+    		<ui:define name="content">
+				<h:form> 
+				<h:panelGrid styleClass="grid" columns="3" id="editGrid">
+						
+						<h:outputText value="Nome:" />
+		                <h:inputText value="#{MBCurso.curso.nome}" required="true" requiredMessage="Nome é requerido" id="nome" validatorMessage="O nome deve conter no mínimo 3 caracteres">
+		                <f:validateLength minimum="3"/>
+		                </h:inputText>
+		                <rich:message id="nomeMsg" for="nome" />
+		            	
+		            	<h:outputText value="Concurso:" />																		
+						<rich:select enableManualInput="true" value="#{MBCurso.concursoSelecionado}" defaultLabel="Digite ou selecione abaixo">
+                			<f:selectItems value="#{MBConcurso.listaConcursos}" var="concurso" itemValue="#{concurso.idconcurso}" itemLabel="#{concurso.nome}" />
+            			</rich:select>
+		            	<p></p>
+		            	<h:outputText value="Ementa:" />
+		                <h:inputText value="#{MBCurso.curso.ementa}" required="true" requiredMessage="Ementa é requerida" id="ementa" validatorMessage="Ementa deve conter no mínimo 3 caracteres">
+		                <f:validateLength minimum="3"/>
+		                </h:inputText>
+		                <rich:message id="ementaMsg" for="ementa" />
+		                
+		                <h:outputText value="Data início (dd/MM/yyyy):" />
+		                <rich:calendar id="dataInicioCurso" value="#{MBCurso.curso.dtInicio}" required="true" requiredMessage="Data de início é requerida" id="dtInicio" validatorMessage="A data deve conter no mínimo 8 caracteres">
+		                <f:convertDateTime pattern="yyyy-MM-dd"/>
+		                </rich:calendar>
+		                <rich:message id="dtInicioMsg" for="dtInicio" />
+		                
+		                
+		                <!-- <h:inputText value="#{MBCurso.curso.dtInicio}" required="true" requiredMessage="Data de início é requerida" id="dtInicio" validatorMessage="A data deve conter no mínimo 8 caracteres">
+		                <f:convertDateTime pattern="yyyy-MM-dd"/>
+		                </h:inputText>
+		                <rich:message id="dtInicioMsg" for="dtInicio" />       -->          
+		                
+		                
+		                <h:outputText value="Data fim (dd/MM/yyyy):" />		               
+		                <h:inputText value="#{MBCurso.curso.dtFim}" required="true" requiredMessage="Data de término é requerida" id="dtFim" validatorMessage="A data deve conter no mínimo 8 caracteres">
+		                <f:convertDateTime pattern="yyyy-MM-dd"/>
+		                </h:inputText>
+		                <rich:message id="dtFimMsg" for="dtFim" />
+		                
+		                <h:outputText value="Quantidade de alunos:" />
+		                <h:inputText value="#{MBCurso.curso.qtdAlunos}" required="true" requiredMessage="A quantidade de alunos é requerida" id="qtdAlunos" validatorMessage="Quantidade de alunos deve conter no mínimo 1 caracter">
+		                <f:validateLength minimum="1"/>
+		                </h:inputText>
+		                <rich:message id="qtdAlunosMsg" for="qtdAlunos" />
+		                
+		                <h:outputText value="Valor:" />
+		                <h:inputText value="#{MBCurso.curso.valor}" required="true" requiredMessage="O valor do curso é requerido" id="valor" validatorMessage="O valor deve conter no mínimo 1 caracteres">
+		                <f:validateLength minimum="1"/>
+		                </h:inputText>
+		                <rich:message id="valorMsg" for="valor" />
+            		
+           			 </h:panelGrid>
+					<h:commandButton  value="salvar" action="#{MBCurso.salvar}"/>
+				  				
+				</h:form>
+    		</ui:define>
+ 
+    	</ui:composition>
+ 
+    </h:body>
+ 
+</html>
