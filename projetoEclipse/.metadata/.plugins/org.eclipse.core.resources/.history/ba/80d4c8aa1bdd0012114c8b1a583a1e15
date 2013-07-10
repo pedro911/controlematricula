@@ -1,7 +1,0 @@
-package aluno;
-
-@ManagedBean(name="MBAluno")
-@SessionScoped
-public class MBAluno {
-
-}

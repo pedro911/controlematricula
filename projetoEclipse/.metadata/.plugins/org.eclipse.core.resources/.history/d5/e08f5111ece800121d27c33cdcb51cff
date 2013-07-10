@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich"
+      >
+    <h:body>
+    
+<ui:composition template="/template/common/commonLayout.xhtml">
+ <ui:define name="content">
+    <h:outputStylesheet>
+        a.no-decor>img {
+        border: none;
+        }
+    </h:outputStylesheet>
+        <a4j:outputPanel ajaxRendered="true">
+        <h:outputText styleClass="titulo" value="Listagem Matrículas"></h:outputText>           
+    </a4j:outputPanel>
+          
+    <!-- <a4j:status onstart="#{rich:component('statPane')}.show()" onstop="#{rich:component('statPane')}.hide()" /> -->
+    <h:form id="form">
+        <h:commandButton value="novo" styleClass="botaoNovo" action="#{MBFuncionario.novo}" />
+        <br />
+        <br />
+        <br />
+                
+        <rich:dataTable value="#{MBMatricula.matricula}" var="car" iterationStatusVar="it" id="table" rows="10">
+            <rich:column>
+                <f:facet name="header">#</f:facet>
+                #{it.index}
+            </rich:column>
+            <rich:column>
+                <f:facet name="header">Nome</f:facet>
+                <h:outputText value="#{car.aluno.nome}" />
+            </rich:column>
+             <rich:column>
+                <f:facet name="header">Curso</f:facet>
+                <h:outputText value="#{car.curso.nome}" />
+            </rich:column>
+            <rich:column>
+                <f:facet name="header">Valor</f:facet>
+                <h:outputText value="#{car.valor}" />
+            </rich:column>
+            <rich:column>
+                <f:facet name="header">Funcionário que matriculouValor</f:facet>
+                <h:outputText value="#{car.funcionario.nome}" />
+            </rich:column> 
+            
+            <rich:column>
+            	<f:facet name="header">Ação</f:facet> 
+                <h:commandLink action="#{MBMatricula.editar}">
+                	 <f:param name="idmatricula"  value="#{car.idmatricula}"/>
+                	<h:graphicImage value="/images/edit.gif" alt="edit" />
+                 </h:commandLink>
+
+                 <h:commandLink action="#{MBMatricula.apagarMatricula}" >
+                	 <f:param name="idmatricula"  value="#{car.idmatricula}"/>
+                	<h:graphicImage value="/images/delete.gif" alt="edit" />
+                 </h:commandLink>
+            </rich:column> 
+            
+            <f:facet name="footer">
+            </f:facet>
+        </rich:dataTable>                 
+                 
+    </h:form>
+    </ui:define>
+</ui:composition>
+ </h:body>
+ 
+</html>

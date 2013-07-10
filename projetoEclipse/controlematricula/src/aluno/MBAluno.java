@@ -2,11 +2,13 @@ package aluno;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
+import javax.faces.model.SelectItem;
 
 @ManagedBean(name="MBAluno")
 @SessionScoped
@@ -16,6 +18,7 @@ public class MBAluno {
 	private Aluno aluno;
 	private int pagina=1;
 	private Integer idSelecionado;
+	private List<SelectItem> listaAlunos = new ArrayList<SelectItem>();
 	
 	public MBAluno(){
 		aluno = new Aluno();
@@ -86,7 +89,7 @@ public class MBAluno {
 	public List<Aluno> getAlunos() throws ClassNotFoundException, SQLException{
 		List<Aluno> lista = new ArrayList<Aluno>();
 		AlunoDAOImpl daoAluno = new AlunoDAOImpl();
-		lista = daoAluno.getAll(Aluno.class);
+		lista = daoAluno.getAll(Aluno.class);		 
 		return lista;
 	}
 
@@ -97,8 +100,26 @@ public class MBAluno {
 	public void setAluno(Aluno aluno) {
 		this.aluno = aluno;
 	}
+	
+	public List<SelectItem> getListaAlunos() {
+		List<Aluno> lista = new ArrayList<Aluno>();
+		AlunoDAOImpl daoAluno = new AlunoDAOImpl();
+		lista = daoAluno.getAll(Aluno.class);
+		List<SelectItem> list = new ArrayList<SelectItem>();  
+	    for(int index = 0; index <lista.size(); index++) {  
+	        list.add(new SelectItem(lista.get(index).getIdaluno(),lista.get(index).getNome()));  
+	    }
+	    listaAlunos = list;
+	    return listaAlunos;		
+	}
+
+	public void setListaAlunos(List<SelectItem> listaAlunos) {
+		this.listaAlunos = listaAlunos;
+	}
 
 	// MÉTODOS DE NAVEGAÇÃO...
+
+	
 
 	public String novo() {
 		aluno = new Aluno();
@@ -125,6 +146,6 @@ public class MBAluno {
 	public String alunos() throws ClassNotFoundException, SQLException {
 		getAlunos();
 		return "ListagemAluno.xhtml";
-	}
-
+	}	
+	
 }

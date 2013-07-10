@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:rich="http://richfaces.org/rich"
+      >
+    <h:body>
+ 
+    	<ui:composition template="/template/common/commonLayout.xhtml">
+ 
+    		<ui:define name="content">
+				<h:form> 
+				<h:panelGrid styleClass="grid" columns="3" id="editGrid">
+						
+						<h:outputText value="Nome do concurso:" />
+		                <h:inputText value="#{MBConcurso.concurso.nome}" required="true" requiredMessage="Nome do concurso é requerido" id="nome" validatorMessage="O nome do concurso deve conter no mínimo 5 caracteres">
+		                <f:validateLength minimum="5"/>
+		                </h:inputText>
+		                <rich:message id="nomeMsg" for="nome" />
+		            	            		
+           			 </h:panelGrid>
+					<h:commandButton  value="salvar" action="#{MBConcurso.salvar}"/>
+				  				
+				</h:form>
+    		</ui:define>
+ 
+    	</ui:composition>
+ 
+    </h:body>
+ 
+</html>

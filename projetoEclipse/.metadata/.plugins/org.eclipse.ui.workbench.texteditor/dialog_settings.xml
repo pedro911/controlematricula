@@ -13,14 +13,20 @@
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="aluno" key="selection"/>
+		<item value="Concursos" key="selection"/>
 		<list key="findhistory">
+			<item value="Cursos"/>
+			<item value="funcionario"/>
+			<item value="Funcionario"/>
 			<item value="cliente"/>
 			<item value="Cliente"/>
 			<item value="MbCliente"/>
 			<item value="Mb"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Concursos"/>
+			<item value="matricula"/>
+			<item value="Matricula"/>
 			<item value="aluno"/>
 			<item value="Aluno"/>
 			<item value="MBAluno"/>

@@ -7,6 +7,10 @@ import java.util.List;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
+import javax.faces.model.SelectItem;
+
+import curso.Curso;
+import curso.CursoDAOImpl;
 
 @ManagedBean(name="MBFuncionario")
 @SessionScoped
@@ -16,7 +20,25 @@ public class MBFuncionario {
 	private Funcionario funcionario;
 	private int pagina=1;
 	private Integer idSelecionado;
+	private List<SelectItem> listaFuncionarios = new ArrayList<SelectItem>();
 	
+	
+	public List<SelectItem> getListaFuncionarios() {
+		List<Funcionario> lista = new ArrayList<Funcionario>();
+		FuncionarioDAOImpl daoFuncionario = new FuncionarioDAOImpl();
+		lista = daoFuncionario.getAll(Funcionario.class);
+		List<SelectItem> list = new ArrayList<SelectItem>();  
+	    for(int index = 0; index <lista.size(); index++) {  
+	        list.add(new SelectItem(lista.get(index).getIdfuncionario(),lista.get(index).getNome()));  
+	    }
+	    listaFuncionarios = list;
+	    return listaFuncionarios;	
+	}
+
+	public void setListaFuncionarios(List<SelectItem> listaFuncionarios) {
+		this.listaFuncionarios = listaFuncionarios;
+	}
+
 	public MBFuncionario(){
 		funcionario = new Funcionario();
 	}

@@ -11,6 +11,14 @@ import javax.persistence.*;
 public class MatriculaPK implements Serializable {
 	//default serial version id, required for serializable classes.
 	private static final long serialVersionUID = 1L;
+	
+	
+
+	public MatriculaPK(int alunoIdaluno, int cursoIdcurso) {
+		super();
+		this.alunoIdaluno = alunoIdaluno;
+		this.cursoIdcurso = cursoIdcurso;
+	}
 
 	@Column(name="aluno_idaluno")
 	private int alunoIdaluno;

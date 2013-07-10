@@ -18,13 +18,13 @@ public class Curso implements Serializable {
 	private int idcurso;
 
 	@Column(name="concurso_idconcurso")
-	private int concursoIdconcurso;
+	private int concursoIdConcurso;
 
-    @Temporal( TemporalType.TIMESTAMP)
+    
 	@Column(name="dt_fim")
 	private Date dtFim;
 
-    @Temporal( TemporalType.TIMESTAMP)
+    
 	@Column(name="dt_inicio")
 	private Date dtInicio;
 
@@ -40,20 +40,20 @@ public class Curso implements Serializable {
     public Curso() {
     }
 
-	public int getIdcurso() {
+	public int getIdCurso() {
 		return this.idcurso;
 	}
 
-	public void setIdcurso(int idcurso) {
-		this.idcurso = idcurso;
+	public void setIdCurso(int idCurso) {
+		this.idcurso = idCurso;
 	}
 
-	public int getConcursoIdconcurso() {
-		return this.concursoIdconcurso;
+	public int getConcursoIdConcurso() {
+		return this.concursoIdConcurso;
 	}
 
-	public void setConcursoIdconcurso(int concursoIdconcurso) {
-		this.concursoIdconcurso = concursoIdconcurso;
+	public void setConcursoIdConcurso(int concursoIdConcurso) {
+		this.concursoIdConcurso = concursoIdConcurso;
 	}
 
 	public Date getDtFim() {

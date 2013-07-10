@@ -11,4 +11,12 @@
 <fullyQualifiedTypeName name="javax.validation.constraints.Min"/>
 <fullyQualifiedTypeName name="javax.validation.constraints.Max"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.constraints.Email"/>
+<fullyQualifiedTypeName name="javax.faces.model.SelectItem"/>
+<fullyQualifiedTypeName name="aluno.Aluno"/>
+<fullyQualifiedTypeName name="curso.Curso"/>
+<fullyQualifiedTypeName name="funcionario.Funcionario"/>
+<fullyQualifiedTypeName name="concurso.Concurso"/>
+<fullyQualifiedTypeName name="aluno.MBAluno"/>
+<fullyQualifiedTypeName name="curso.MBCurso"/>
+<fullyQualifiedTypeName name="funcionario.MBFuncionario"/>
 </qualifiedTypeNameHistroy>

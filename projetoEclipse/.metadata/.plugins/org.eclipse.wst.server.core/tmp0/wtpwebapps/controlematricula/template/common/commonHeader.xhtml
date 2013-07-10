@@ -31,8 +31,25 @@
                         <h:outputText value="Cadastros" />
                     </h:panelGroup>
                 </f:facet>
-                <rich:menuItem label="Cliente" action="ListagemCliente.xhtml" >
-                </rich:menuItem>
+                <rich:menuItem label="Aluno" action="CadastroAluno.xhtml"></rich:menuItem>
+                <rich:menuItem label="Concurso" action="CadastroConcurso.xhtml"></rich:menuItem>
+                <rich:menuItem label="Curso" action="CadastroCurso.xhtml"></rich:menuItem>
+                <rich:menuItem label="Funcionário" action="CadastroFuncionario.xhtml"></rich:menuItem>
+                <rich:menuItem label="Matrícula" action="CadastroMatricula.xhtml"></rich:menuItem>
+            </rich:dropDownMenu>
+            
+            <rich:dropDownMenu mode="ajax">
+                <f:facet name="label">
+                    <h:panelGroup>
+                        <h:graphicImage value="/images/edit.gif" styleClass="pic" alt="copy" />
+                        <h:outputText value="Listagem" />
+                    </h:panelGroup>
+                </f:facet>
+                <rich:menuItem label="Aluno" action="ListagemAluno.xhtml"></rich:menuItem>
+                <rich:menuItem label="Concurso" action="ListagemConcurso.xhtml"></rich:menuItem>
+                <rich:menuItem label="Curso" action="ListagemCurso.xhtml"></rich:menuItem>
+                <rich:menuItem label="Funcionário" action="ListagemFuncionario.xhtml"></rich:menuItem>
+                <rich:menuItem label="Matrícula" action="ListagemMatricula.xhtml"></rich:menuItem>
             </rich:dropDownMenu>
  
             <rich:dropDownMenu mode="ajax">

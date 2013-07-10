@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a4j="http://richfaces.org/a4j"
+      xmlns:rich="http://richfaces.org/rich"
+      >
+    <h:body>
+    
+<ui:composition template="/template/common/commonLayout.xhtml">
+ <ui:define name="content">
+    <h:outputStylesheet>
+        a.no-decor>img {
+        border: none;
+        }
+    </h:outputStylesheet>
+        <a4j:outputPanel ajaxRendered="true">
+        <h:outputText styleClass="titulo" value="Listagem concursos"></h:outputText>           
+    </a4j:outputPanel>
+          
+    <!-- <a4j:status onstart="#{rich:component('statPane')}.show()" onstop="#{rich:component('statPane')}.hide()" /> -->
+    <h:form id="form">
+        <h:commandButton value="novo" styleClass="botaoNovo" action="#{MBConcurso.novo}" />
+        <br />
+        <br />
+        <br />
+                
+        <rich:dataTable value="#{MBConcurso.concursos}" var="con" iterationStatusVar="it" id="table" rows="10">
+            <rich:column>
+                <f:facet name="header">#</f:facet>
+                #{it.index}
+            </rich:column>
+            <rich:column>
+                <f:facet name="header">Nome</f:facet>
+                <h:outputText value="#{con.nome}" />
+            </rich:column>
+            <rich:column>
+            	<f:facet name="header">Ação</f:facet> 
+                <h:commandLink action="#{MBConcurso.editar}">
+                	 <f:param name="idconcurso"  value="#{con.idconcurso}"/>
+                	<h:graphicImage value="/images/edit.gif" alt="Editar" />
+                 </h:commandLink>
+
+                 <h:commandLink action="#{MBConcurso.apagarConcurso}" >
+                	 <f:param name="idconcurso"  value="#{con.idconcurso}"/>
+                	<h:graphicImage value="/images/delete.gif" alt="Editar" />
+                 </h:commandLink>
+            </rich:column> 
+            
+            <f:facet name="footer">
+                <rich:dataScroller page="#{MBConcurso.pagina}" />
+            </f:facet>
+        </rich:dataTable>                 
+                 
+    </h:form>
+    </ui:define>
+</ui:composition>
+ </h:body>
+ 
+</html>

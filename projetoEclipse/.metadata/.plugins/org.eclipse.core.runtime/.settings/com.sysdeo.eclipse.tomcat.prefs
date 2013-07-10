@@ -1,6 +1,2 @@
-contextsDir=C\:\\Program Files\\Apache Software Foundation\\Tomcat 7.0\\conf\\Catalina\\localhost
 eclipse.preferences.version=1
 fixTomcatHomeBug=fixed
-tomcatConfigFile=C\:\\Program Files\\Apache Software Foundation\\Tomcat 7.0\\conf\\server.xml
-tomcatDir=C\:\\Program Files\\Apache Software Foundation\\Tomcat 7.0
-tomcatVersion=tomcatV7

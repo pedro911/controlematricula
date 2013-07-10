@@ -1,7 +1,0 @@
-package funcionario;
-
-import util.DAOImpl;
-
-public class FuncionarioDAOImpl extends DAOImpl<Funcionario, Integer>{
-	
-}

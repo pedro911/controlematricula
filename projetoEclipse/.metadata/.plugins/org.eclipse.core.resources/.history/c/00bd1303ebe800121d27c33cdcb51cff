@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"   
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:rich="http://richfaces.org/rich"
+      >
+    <h:body>
+ 
+    	<ui:composition template="/template/common/commonLayout.xhtml">
+ 
+    		<ui:define name="content">
+				<h:form> 
+				<h:panelGrid styleClass="grid" columns="3" id="editGrid">
+						
+						<h:outputText value="Aluno:" />																		
+						<rich:select enableManualInput="true" value="#{MBMatricula.alunoSelecionado}" defaultLabel="Digite o nome ou selecione abaixo">
+                			<f:selectItems value="#{MBAluno.listaAlunos}" var="aluno" itemValue="#{aluno.idaluno}" itemLabel="#{aluno.nome}" />
+            			</rich:select>
+            			<p></p>
+            			
+            			<h:outputText value="Curso:" />																		
+						<rich:select enableManualInput="true" value="#{MBMatricula.cursoSelecionado}" defaultLabel="Digite o nome ou selecione abaixo">
+                			<f:selectItems value="#{MBCurso.listaCursos}" var="curso" itemValue="#{curso.idcurso}" itemLabel="#{curso.nome}" />
+            			</rich:select>
+						<p></p>         
+		              
+            			<h:outputText value="Funcionario:" />																		
+						<rich:select enableManualInput="true" value="#{MBMatricula.funcionarioSelecionado}" defaultLabel="Digite o nome ou selecione abaixo">
+                			<f:selectItems value="#{MBFuncionario.listaFuncionarios}" var="funcionario" itemValue="#{funcionario.idfuncionario}" itemLabel="#{funcionario.nome}" />
+            			</rich:select>
+  						<p></p>
+  						<h:outputText value="Valor:" />
+		                <h:inputText value="#{MBFuncionario.funcionario.senha}" required="true" requiredMessage="Senha é requerida" id="senha" validatorMessage="Senha deve ter no mínimo 3 caracteres">
+		                <f:validateLength minimum="3"/>
+		                </h:inputText>
+		                <rich:message id="senhaMsg" for="senha" />
+            			<p></p>            			
+           			 </h:panelGrid>
+					<h:commandButton  value="salvar" action="#{MBFuncionario.salvar}"/>
+				  				
+				</h:form>
+    		</ui:define>
+ 
+    	</ui:composition>
+ 
+    </h:body>
+ 
+</html>
